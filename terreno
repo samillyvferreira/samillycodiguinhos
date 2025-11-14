@@ -1,0 +1,17 @@
+using System;
+
+class Program {
+    static void Main() {
+        double largura, comprimento, valorMetro, area, preco;
+
+        largura = double.Parse(Console.ReadLine());
+        comprimento = double.Parse(Console.ReadLine());
+        valorMetro = double.Parse(Console.ReadLine());
+
+        area = largura * comprimento;
+        preco = area * valorMetro;
+
+        Console.WriteLine($"Área do terreno = {area:F2}");
+        Console.WriteLine($"Preço do terreno = R$ {preco:F2}");
+    }
+}
